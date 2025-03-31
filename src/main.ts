@@ -11,7 +11,10 @@ async function bootstrap() {
     }),
   );
   app.enableCors({
-    origin: ['http://localhost:8080', 'http://localhost:3001'], // Allow all origins (Use specific origins in production)
+    origin: [
+      'https://pennymainfrontend-production.up.railway.app',
+      'https://pennypersonalfrontend-production.up.railway.app',
+    ], // Allow all origins (Use specific origins in production)
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     allowedHeaders: 'Content-Type, Authorization',
     credentials: true, // Allow sending cookies with requests
